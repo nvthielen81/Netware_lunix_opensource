@@ -1,0 +1,2 @@
+CC=gcc
+DIR_FILES=./kernel.c
