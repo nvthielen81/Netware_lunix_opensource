@@ -22,4 +22,3 @@ section .text
 ; of the interupts the jump true the program clock caller ascii ( clock of the ouwers , and the minits ) and the 0x00 for the bios bit call up.
 ;  and the FET file electron trasmiter clock of the CPU that e Frion system is the recat on headt and coldt
 ; i/o od the DD call the fesr moterbordt 0x00 and load the next step of the system list file binare data of the on the backboon bus memory
-; 
