@@ -1,6 +1,7 @@
 CC=gcc
 TARGET=myiso
-C_FILES=./HWCD_loader/kernel.c
+C_FILES=./HWCD_loader/kernel.c \
+	./HWCD_loader/core/string.c
 OBJS=$(C_FILES:.c=.o)
 
 all compile: $(TARGET)

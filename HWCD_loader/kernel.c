@@ -10,7 +10,7 @@ void kernel_early(void)
 void main(void)
 {
 
-        const char *message = "Lunix NetWare Edition 1.0";
+    const char *message = "Lunix NetWare Edition 1.0";
     unsigned int i = 0;
     unsigned int j = 0;
     while(message[i] != '\0') {
