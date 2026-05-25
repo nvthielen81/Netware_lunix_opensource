@@ -1,21 +1,27 @@
-void out_idell(void)
+static char* const VGA_MEMORY = (char*)0xB8000;
+static const int VGA_WIDTH = 80;
+static const int VGA_HEIGHT = 25;
+
+void kernel_early(void)
+{ 
+
+}
+
+void main(void)
 {
-    int i;
-    for (i = 0; i < 10; i++) {
-        printk(KERN_INFO "IDELL: %d\n", i);
-        msleep(1000); // Sleep for 1 second
+
+        const char *message = "Lunix NetWare Edition 1.0";
+    unsigned int i = 0;
+    unsigned int j = 0;
+    while(message[i] != '\0') {
+        VGA_MEMORY[j] = message[i];
+        VGA_MEMORY[j + 1] = 0x07;
+        
+        i++;
+        j=j + 2;
     }
-}
 
-void loader_kernel(void)
-{
-    printk(KERN_INFO "Loader kernel main function called.\n");
-    // Additional kernel code can be added here
+
 }
 
 
-void suspend_system(void)
-{
-    printk(KERN_INFO "System is suspending...\n");
-    // Code to suspend the system can be added here
-}
